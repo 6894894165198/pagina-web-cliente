@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sindugraf | Artes Gráficas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header bg-azul">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/logoSindugraf.png" alt="Sindugraf Logo" height="50">
+            </a>
+
+
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="cotiza.html">Cotiza</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h1>Transformamos tus ideas en impresiones impactantes</h1>
+            <a href="cotiza.html" class="btn btn-primary"> Solicita tu cotización</a>
+        </div>
+    </section>
+
+    <section class="Servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/tarjetas.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjetas de presentación</h5>
+                        <p class="card-text">Diseños elegantes y profesionales en acabados mate o brillantes. Personaliza tus tarjetas con calidad.</p>
+                        <a href="cotiza.html" class="btn btn-primary">Solicitar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/tablettent.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Volantes publicitarios</h5>
+                        <p class="card-text">Promociona tu negocio con volantes de alto impacto. Disponibles en distintos tamaños y papeles de alta resistencia.</p>
+                        <a href="cotiza.html" class="btn btn-primary">Solicitar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/revistas.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Catálogos y afiches</h5>
+                        <p class="card-text">Presenta tus productos o eventos con catálogos y afiches a todo color, ideales para campañas visuales.</p>
+                        <a href="cotiza.html" class="btn btn-primary">Solicitar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/collarines.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Stickers personalizados</h5>
+                        <p class="card-text">Crea etiquetas y stickers únicos para tus productos. Impresión duradera y con cortes personalizados.</p>
+                        <a href="cotiza.html" class="btn btn-primary">Solicitar</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sindugraf | Artes Gráficas</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante del chatbot -->
+    <div id="chatbot-btn" title="Abrir chat">
+        💬
+    </div>
+
+   <script src="js/chatbot.js"></script>
+</body>
+
+</html>

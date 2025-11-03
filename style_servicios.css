@@ -1,0 +1,18 @@
+.header {
+  background-color: #002147; /* Azul marino */
+  color: #fff;
+  padding: 1rem 0;
+}
+.bg-azul {
+  background-color: #003c8f;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}

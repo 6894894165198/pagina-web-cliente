@@ -1,0 +1,583 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e4e7eb); /* Degradado gris claro */
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Contenedor */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* Header */
+.header {
+  background-color: #002147; /* Azul marino */
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(to right, #003366, #002147); /* Azul marino oscuro */
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner .btn {
+  background-color: white;
+  color: #002147;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.banner .btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Servicios */
+.servicios {
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+.servicios h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #003c8f;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #f1f3f5;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #003c8f;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Botón para tarjetas */
+.btn-card {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #003c8f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-card:hover {
+  background-color: #0059b3;
+}
+
+/* Caja del formulario */
+.formulario-caja {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25); /* sombra más fuerte */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.formulario-caja:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35); /* sombra más intensa al pasar el mouse */
+}
+
+/* Título */
+.formulario-caja h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #003c8f;
+}
+
+.btn-enviar {
+  background-color: #003c8f;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.btn-enviar:hover {
+  background-color: #0059b3;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.alert-custom {
+  z-index: 9999;
+}
+
+/* Footer */
+footer {
+  margin-top: 0;
+  padding: 20px 0;
+  background-color: #002147;
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+/* ================================
+    Estilos de la galería Catálogo
+   ================================ */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.grid-galeria .item {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-galeria .item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+  border-bottom: 4px solid #002147; /* Azul marino */
+}
+
+.grid-galeria h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #002147;
+  font-weight: bold;
+}
+
+.grid-galeria .btn-card {
+  margin-bottom: 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color: #003c8f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.grid-galeria .btn-card:hover {
+  background-color: #0059b3;
+}
+
+/* ================================
+    Estilos de la galería Contacto
+   ================================ */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #222;
+  }
+  .header {
+    background-color: #002147;
+    color: white;
+    padding: 1rem 0;
+  }
+  .header .logo img {
+    height: 50px;
+  }
+  .nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  .contacto-caja {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    margin-bottom: 2rem;
+  }
+  .footer {
+    background: #002147;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+      margin-top: 3rem;
+  }
+  
+/*  Botón flotante */
+/* 🔹 Botón flotante del chatbot */
+#chatbot-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #2429c1;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10000; /* Alto z-index para estar encima de todo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#chatbot-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* 🔹 Contenedor del chat */
+#chatbot-container {
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  width: 340px;
+  max-height: 400px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  z-index: 9999; /* Justo debajo del botón */
+  animation: aparecerChat 0.3s ease-out;
+}
+
+#chatbot-container.activo {
+  display: flex;
+}
+
+@keyframes aparecerChat {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.chat-header {
+  background-color: #282ca7ff;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-body {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.chat-options button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chat-footer {
+  padding: 8px;
+  border-top: 1px solid #eee;
+}
+
+.btn-chat {
+  background-color: #1e51df;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chat-input, .chat-select {
+  width: 100%;
+  margin-top: 8px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+/* 🔹 Ventana del chatbot */
+.chatbot-ventana {
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.chatbot-header {
+  background-color: #002147;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-mensajes {
+  padding: 10px;
+  height: 250px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  background: #f8f9fa;
+}
+
+.chatbot-mensajes p {
+  margin-bottom: 8px;
+}
+
+.chatbot-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chatbot-input input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.chatbot-input button {
+  background: #002147;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+footer {
+  margin-top: 0;
+  padding: 20px 0;
+  background-color: #001f3f; /* azul institucional */
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* 🔹 Botones de navegación dentro del chat (Volver / Inicio) */
+.btn-chat.secundario {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-chat.secundario:hover {
+  background-color: #e2e2e2;
+  color: #000;
+}
+
+/* 🔹 Asegura que los botones del chat se alineen bien */
+.chat-body button {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/* === Sección de contacto elegante === */
+.contacto-section {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  min-height: 100vh;
+}
+
+.contacto-section h2 {
+  color: #002147;
+}
+
+.mapa-card iframe {
+  border-radius: 12px;
+}
+
+.contacto-info {
+  border-left: 4px solid #002147;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.contacto-info p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-info i {
+  margin-right: 8px;
+}
+
+.btn-primary {
+  background-color: #002147;
+  border-color: #002147;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #003c8f;
+  border-color: #003c8f;
+}
+.chat-error {
+  color: #e74c3c;
+  background: #fdecea;
+  border-left: 3px solid #e74c3c;
+  padding: 6px 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.input-error {
+  border: 2px solid #e74c3c !important;
+  background-color: #fff6f6 !important;
+}
+
+.chat-msg-sistema {
+  color: #c0392b;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.chat-loading {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  animation: parpadeo 1.5s infinite;
+}
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+.chat-loading {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.bot-message {
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  padding: 10px 15px;
+  max-width: 90%;
+  margin: 10px auto;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.typing-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

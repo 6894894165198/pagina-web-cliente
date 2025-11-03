@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - SINDUGRAF</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Tus estilos -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* 🌐 Sección de contacto elegante */
+    .contacto-section {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      min-height: 100vh;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .contacto-section h2 {
+      color: #002147;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    .mapa-card iframe {
+      border-radius: 12px;
+    }
+
+    .contacto-info {
+      border-left: 5px solid #002147;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .contacto-info p {
+      font-size: 1rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .contacto-info i {
+      margin-right: 8px;
+      color: #002147;
+    }
+
+    .btn-primary {
+      background-color: #002147;
+      border-color: #002147;
+      transition: background 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #003c8f;
+      border-color: #003c8f;
+    }
+
+    .footer {
+      background-color: #002147;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 HEADER -->
+  <header class="header bg-azul">
+    <nav class="navbar navbar-expand-lg container">
+      <a class="navbar-brand text-white fw-bold" href="index.html">SINDUGRAF</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="cotiza.html">Cotiza</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 🔹 SECCIÓN DE CONTACTO -->
+  <section class="contacto-section">
+    <div class="container">
+      <h2 class="text-center">Contáctanos</h2>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- 🗺️ Mapa -->
+        <div class="col-lg-6">
+          <div class="card h-100 shadow-lg border-0 mapa-card">
+            <div class="card-body p-0">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=-12.053006696080134,-77.0513219906001
+                width="100%"
+                height="350"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                class="rounded-bottom"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- 📞 Datos de contacto + Formulario -->
+        <div class="col-lg-6">
+          <div class="contacto-info h-100">
+            <h4 class="text-primary mb-3">Información de contacto</h4>
+            <p><i class="bi bi-geo-alt-fill"></i> Jangas 363, Lima 15082</p>
+            <p><i class="bi bi-telephone-fill"></i> (01) 4235904</p>
+            <p><i class="bi bi-envelope-fill"></i> contacto@sindugraf.com</p>
+
+            <hr class="my-4">
+
+            <h5 class="text-primary mb-3">Horario de atención</h5>
+            <p><i class="bi bi-clock"></i> Lunes a Viernes: 9:00 am – 6:00 pm</p>
+            <p><i class="bi bi-clock-history"></i> Sábados: 9:00 am – 1:00 pm</p>
+            <p><i class="bi bi-clock-history"></i> Sábados: 9:00 am – 1:00 pm</p>
+            <hr class="my-4">
+
+            <h5 class="text-primary mb-3">Envíanos un mensaje</h5>
+            <form id="contactoForm">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Tu nombre completo</label>
+                <input type="text" id="nombre" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" id="correo" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="text" id="telefono" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea id="mensaje" class="form-control" rows="3" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Enviar por WhatsApp</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Sindugraf. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // 📲 Enviar formulario a WhatsApp
+    document.getElementById("contactoForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      let nombre = document.getElementById("nombre").value;
+      let correo = document.getElementById("correo").value;
+      let telefono = document.getElementById("telefono").value;
+      let mensaje = document.getElementById("mensaje").value;
+
+      let url = "https://wa.me/51947234694?text=" +
+        "Hola, soy " + nombre + "%0A" +
+        "Correo: " + correo + "%0A" +
+        "Teléfono: " + telefono + "%0A%0A" +
+        "Mensaje: " + mensaje;
+
+      window.open(url, "_blank");
+    });
+  </script>
+
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

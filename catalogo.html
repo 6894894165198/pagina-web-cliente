@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo | SINDUGRAF</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <!-- 🔹 HEADER con menú -->
+  <header class="header bg-azul">
+    <nav class="navbar navbar-expand-lg container">
+      <a class="navbar-brand text-white fw-bold" href="index.html">SINDUGRAF</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="cotiza.html">Cotiza</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!-- 🔹 BANNER -->
+<section class="banner">
+  <div class="container text-center">
+    <h1>Catálogo de Productos</h1>
+    <p>Explora nuestros principales servicios y solicita tu cotización.</p>
+  </div>
+</section>
+
+<!-- 🔹 GALERÍA -->
+<section class="catalogo-galeria container my-5">
+  <h2 class="text-center mb-4">Nuestros Productos</h2>
+  <div class="grid-galeria">
+    
+    <!-- 📌 Cada item es un servicio (reemplaza la imagen por la real del PDF) -->
+    <div class="item">
+      <img src="imagenes/revistas.png" alt="Revistas" />
+      <h3>Revistas</h3>
+      <a href="cotiza.html?servicio=Revistas" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalRevistas">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="imagenes/tablettent.png" alt="Afiches" />
+      <h3>Afiches</h3>
+      <a href="cotiza.html?servicio=Afiches" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalAfiches">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="imagenes/cajas.png" alt="Cajas" />
+      <h3>Cajas</h3>
+      <a href="cotiza.html?servicio=Cajas" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalCajas">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="imagenes/collarines.png" alt="Etiquetas" />
+      <h3>Etiquetas</h3>
+      <a href="cotiza.html?servicio=Etiquetas" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalEtiquetas">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="imagenes/brouchers.png" alt="Brochures" />
+      <h3>Brochures</h3>
+      <a href="cotiza.html?servicio=Brochures" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalBrochures">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="imagenes/libros.png" alt="Literaturas" />
+      <h3>Literaturas</h3>
+      <a href="cotiza.html?servicio=Literaturas" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalLiteraturas">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="img/catalogo_formularios.jpg" alt="Formularios" />
+      <h3>Formularios</h3>
+      <a href="cotiza.html?servicio=Formularios" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalFormularios">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="imagenes/cuadernos.png" alt="Encuadernación" />
+      <h3>Encuadernación</h3>
+      <a href="cotiza.html?servicio=Encuadernacion" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalEncuadernacion">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="imagenes/cajasdelicores.png" alt="Caja para Licores" />
+      <h3>Caja para Licores</h3>
+      <a href="cotiza.html?servicio=CajaLicores" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalCajaLicores  ">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="imagenes/cajas.png" alt="Cajas para Alimentos" />
+      <h3>Cajas para Alimentos</h3>
+      <a href="cotiza.html?servicio=CajaAlimentos" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalCajaAlimentos">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="imagenes/dipticos.png" alt="Libros y Agendas" />
+      <h3>Libros y Agendas</h3>
+      <a href="cotiza.html?servicio=LibrosAgendas" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalLibrosAgendas">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="imagenes/tarjetas.png" alt="Tarjetas Personales" />
+      <h3>Tarjetas Personales</h3>
+      <a href="cotiza.html?servicio=TarjetasPersonales" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalTarjetas">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="img/catalogo_gigantografias.jpg" alt="Gigantografías" />
+      <h3>Gigantografías</h3>
+      <a href="cotiza.html?servicio=Gigantografias" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalGigantografias">Detalles</button>
+    </div>
+
+    <div class="item">
+      <img src="img/catalogo_serigrafia.jpg" alt="Serigrafía" />
+      <h3>Serigrafía</h3>
+      <a href="cotiza.html?servicio=Serigrafia" class="btn btn-card">Cotizar</a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalSerigrafia">Detalles</button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- 🔹 MODALES DE SERVICIOS -->
+
+<!-- 🔹 MODALES PARA CADA SERVICIO -->
+
+<!-- Modal - Revistas -->
+<div class="modal fade" id="modalRevistas" tabindex="-1" aria-labelledby="modalRevistasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalRevistasLabel">Revistas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Diseñamos e imprimimos revistas de alta calidad, con acabados profesionales en papel couché o bond. Perfectas para publicaciones corporativas, catálogos o difusión de contenido editorial.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Afiches -->
+<div class="modal fade" id="modalAfiches" tabindex="-1" aria-labelledby="modalAfichesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalAfichesLabel">Afiches</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Impresión de afiches en diferentes tamaños y acabados. Ideales para publicidad, campañas promocionales y eventos, con colores nítidos y alta durabilidad.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Cajas -->
+<div class="modal fade" id="modalCajas" tabindex="-1" aria-labelledby="modalCajasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalCajasLabel">Cajas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Fabricamos cajas personalizadas en cartón resistente, adaptadas a las necesidades de tu producto. Ofrecemos acabados laminados, barnizados y troquelados.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Etiquetas -->
+<div class="modal fade" id="modalEtiquetas" tabindex="-1" aria-labelledby="modalEtiquetasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalEtiquetasLabel">Etiquetas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Etiquetas adhesivas para productos en distintos formatos y materiales. Resistentes al uso y con acabados que realzan la presentación de tu marca.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Brochures -->
+<div class="modal fade" id="modalBrochures" tabindex="-1" aria-labelledby="modalBrochuresLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalBrochuresLabel">Brochures</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Brochures informativos y promocionales que transmiten el valor de tu empresa. Disponibles en distintos pliegues y formatos, con impresión a todo color.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Literaturas -->
+<div class="modal fade" id="modalLiteraturas" tabindex="-1" aria-labelledby="modalLiteraturasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalLiteraturasLabel">Literaturas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Impresión de folletos y material literario con calidad profesional. Ideales para información técnica, instructivos y presentaciones corporativas.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Formularios -->
+<div class="modal fade" id="modalFormularios" tabindex="-1" aria-labelledby="modalFormulariosLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalFormulariosLabel">Formularios</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Formularios personalizados en papel autocopiativo o bond, diseñados para facilitar la gestión interna de tu empresa. Disponibles en juegos simples o múltiples.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Encuadernación -->
+<div class="modal fade" id="modalEncuadernacion" tabindex="-1" aria-labelledby="modalEncuadernacionLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalEncuadernacionLabel">Encuadernación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Servicios de encuadernación en espiral, anillado, hotmelt y tapa dura. Perfecto para manuales, libros y documentos empresariales.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Caja para Licores -->
+<div class="modal fade" id="modalCajaLicores" tabindex="-1" aria-labelledby="modalCajaLicoresLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalCajaLicoresLabel">Caja para Licores</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Cajas premium diseñadas especialmente para la presentación de licores. Resistentes, elegantes y con acabados de lujo que potencian tu marca.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Cajas para Alimentos -->
+<div class="modal fade" id="modalCajaAlimentos" tabindex="-1" aria-labelledby="modalCajaAlimentosLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalCajaAlimentosLabel">Cajas para Alimentos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Cajas prácticas y seguras para alimentos, diseñadas con materiales aptos para consumo. Personalizables en impresión y tamaño.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Libros y Agendas -->
+<div class="modal fade" id="modalLibrosAgendas" tabindex="-1" aria-labelledby="modalLibrosAgendasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalLibrosAgendasLabel">Libros y Agendas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Producción de libros y agendas de alta calidad, con distintos estilos de encuadernación y acabados que aseguran durabilidad y elegancia.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Tarjetas Personales -->
+<div class="modal fade" id="modalTarjetas" tabindex="-1" aria-labelledby="modalTarjetasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalTarjetasLabel">Tarjetas Personales</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Tarjetas de presentación profesionales con diseños modernos e impresión de alta resolución. Disponibles en papeles especiales y acabados premium.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Gigantografias -->
+<div class="modal fade" id="modalGigantografias" tabindex="-1" aria-labelledby="modalGigantografiaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalTarjetasLabel">Gigantografia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Impresiones de gran formato para exteriores e interiores, resistentes al clima y con colores de alto impacto visual para tu marca.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - Serigrafias -->
+<div class="modal fade" id="modalSerigrafia" tabindex="-1" aria-labelledby="modalSerigrafiaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalTarjetasLabel">Serigrafia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Servicio de serigrafía de alta calidad en diferentes materiales: textiles, plásticos, cartón, papel y más, con colores vibrantes y duraderos.
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- 🔹 BOTÓN DESCARGAR PDF -->
+  <section class="catalogo-pdf text-center my-4">
+    <a href="imagenes/CATALOGO 2025 SINDUGRAF (2).pdf" target="_blank" class="btn btn-enviar">
+      📄 Ver catálogo completo en PDF
+    </a>
+  </section>
+
+  <!-- 🔹 FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sindugraf | Artes Gráficas</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante del chatbot -->
+  <div id="chatbot-btn" title="Abrir chat">
+    💬
+  </div>
+
+<script src="js/chatbot.js"></script>
+</body>
+
+</html>
